@@ -18,7 +18,7 @@ kitty, alacritty, terminator, tilix, konsole, wezterm, foot, st, xterm, urxvt, g
 One-line install:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/jayyabsley/multi-terminal-nautilus/master/setup-terminal-selector.sh | bash
+bash <(wget -qO- https://raw.githubusercontent.com/jayyabsley/multi-terminal-nautilus/master/setup-terminal-selector.sh)
 ```
 
 Or clone and run locally:
@@ -43,7 +43,7 @@ After installation, right-click any folder in Nautilus to see "Open in [Terminal
 To modify, reinstall, or uninstall, run the installer again:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/jayyabsley/multi-terminal-nautilus/master/setup-terminal-selector.sh | bash
+bash <(wget -qO- https://raw.githubusercontent.com/jayyabsley/multi-terminal-nautilus/master/setup-terminal-selector.sh)
 ```
 
 Options:
