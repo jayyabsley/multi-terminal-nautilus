@@ -22,7 +22,7 @@ if [ -f "$EXTENSION_FILE" ]; then
     echo "  [3] Uninstall"
     echo "  [4] Cancel"
     echo ""
-    read -p "Your choice (1-4): " choice
+    read -p "Your choice (1-4): " choice </dev/tty
 
     case $choice in
         1)
@@ -67,7 +67,7 @@ uninstall() {
         echo "A configuration file was found at:"
         echo "  $CONFIG_FILE"
         echo ""
-        read -p "Do you want to keep this file for future reinstallation? (y/n): " keep_config
+        read -p "Do you want to keep this file for future reinstallation? (y/n): " keep_config </dev/tty
 
         if [[ "$keep_config" =~ ^[Nn]$ ]]; then
             rm -f "$CONFIG_FILE"
@@ -193,7 +193,7 @@ install() {
     done
 
     echo ""
-    read -p "Your selection: " selection
+    read -p "Your selection: " selection </dev/tty
 
     # Process selection
     declare -A SELECTED_TERMINALS
