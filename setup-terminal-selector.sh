@@ -2,6 +2,7 @@
 
 # Terminal Selector Nautilus Extension - Setup Script
 # This script handles both installation and uninstallation
+# Version: 1.1 (with /dev/tty fix for piped execution)
 
 CONFIG_FILE="$HOME/.config/nautilus-terminals.conf"
 EXTENSION_DIR="$HOME/.local/share/nautilus-python/extensions"
